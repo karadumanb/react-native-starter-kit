@@ -1,0 +1,1 @@
+declare type ApiMethodType = "GET" | "POST" | "PUT" | "DELETE";
