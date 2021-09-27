@@ -16,7 +16,7 @@ export default function Login({ route }: { route: RouteProps }) {
   return (
     <Card bg="white">
       <Box>
-        <Text typography="h4">{tScreen({ id: "title" })}</Text>
+        <Text typography="h4">{tScreen("title")}</Text>
       </Box>
       <LoginForm onSuccess={onSuccess} />
     </Card>

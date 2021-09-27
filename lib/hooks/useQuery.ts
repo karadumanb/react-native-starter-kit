@@ -76,9 +76,7 @@ export function useQuery({
     }
   }, [error]);
 
-  // const execute: typeof executeAxios = async (...params) => {
-  // Todo: Fix Types
-  const execute: any = async (...params: any) => {
+  const execute: typeof executeAxios = async (...params: any) => {
     setExecuteInUse(true);
     try {
       const response = await executeAxios(...params);

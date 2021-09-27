@@ -9,7 +9,7 @@ const userAttributes: Array<keyof Partial<IUser>> = [
   "token",
 ];
 
-export default function useToken() {
+export default function useUser() {
   const [user, setUser] = useState<Partial<IUser> | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean | null>(null);
 

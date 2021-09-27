@@ -28,9 +28,7 @@ export function Input({
   const getPlaceholder = () => {
     if (placeholder) {
       if (required) {
-        return `* ${placeholder} ${tModule({
-          id: "placeholder_required_addon",
-        })}`;
+        return `* ${placeholder} ${tModule("placeholder_required_addon")}`;
       }
 
       return placeholder;

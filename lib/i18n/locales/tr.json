@@ -1,0 +1,72 @@
+{
+  "screens": {
+    "Login": {
+      "title": "Telefon Numaranız ile Giriş Yapın"
+    },
+    "Register": {
+      "title": "Email, İsim ve Telefon Numaranız ile Kayıt Olun",
+      "already-have-account": "Kayıtlı Hesabın Mı Var? <login>Giriş Yap</login>",
+      "checkout-app": "Uygulamaya Göz At"
+    },
+    "OTP": {
+      "title": "Onay Kodu",
+      "description": "SMS ile telefonunuza gelen kodu bu alana girin.",
+      "count_down_end_title": "Geri Sayım Sona Erdi.",
+      "count_down_end_description": "Belirlenen süre içinde işlem yapmadınız."
+    },
+    "Intro": {
+      "title": {
+        "slide_item_0": "Lorem ipsum",
+        "slide_item_1": "Nulla dapibus",
+        "slide_item_2": "Etiam ut nunc nisi",
+        "slide_item_3": "Curabitur a sodales lorem",
+        "slide_item_4": "Aenean sed orci sed"
+      },
+      "description": {
+        "slide_item_0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed purus congue, ullamcorper velit sit amet, vehicula enim.",
+        "slide_item_1": "Nulla dapibus, elit quis semper rhoncus, sem quam ultrices sapien, ac semper purus nunc id purus. Praesent ut massa at ex sodales commodo",
+        "slide_item_2": "Etiam ut nunc nisi. Morbi at nisl metus. Pellentesque convallis mauris leo, ut hendrerit augue scelerisque eget.",
+        "slide_item_3": "Curabitur a sodales lorem, sit amet efficitur lacus. Proin laoreet nisi erat. Vivamus luctus congue turpis in auctor. Donec fermentum tincidunt massa, et faucibus diam placerat non.",
+        "slide_item_4": "Aenean sed orci sed ex cursus ultrices. Curabitur consequat mauris et arcu congue mollis. Duis sed tincidunt purus, in finibus massa."
+      }
+    }
+  },
+  "concepts": {
+    "OTP": {
+      "button": "ONAYLA"
+    },
+    "Login": {
+      "button": "GİRİŞ YAP",
+      "phone": "Telefon",
+      "phone-suffix": "+90"
+    },
+    "Register": {
+      "button": "KAYIT OL",
+      "email": "Email",
+      "name": "İsim",
+      "surname": "Soyisim",
+      "phone": "Telefon Numarası",
+      "termsAccepted": "KVKK ve Gizlilik Metnini Okudum ve Onaylıyorum."
+    },
+    "Auth": {
+      "logout": "Çıkış Yap"
+    }
+  },
+  "modules": {
+    "Form": {
+      "placeholder_required_addon": "(zorunlu)"
+    },
+    "Slider": {
+      "start_app": "BAŞLA",
+      "continue": "TAMAM"
+    }
+  },
+  "components": {
+    "General": {
+      "reach-us": "Sorularınız için <highlight>Bize Ulaşın</highlight>"
+    },
+    "Search": {
+      "default-placeholder": "Arama Yap..."
+    }
+  }
+}

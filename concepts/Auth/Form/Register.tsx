@@ -30,23 +30,17 @@ export default function RegisterForm({
     <Form
       onSubmit={onSubmit}
       buttonProps={{
-        title: tConcept({ id: "button" }),
+        title: tConcept("button"),
         loading,
       }}
       recordType="register"
     >
-      <Input name="firstName" placeholder={tConcept({ id: "name" })} required />
+      <Input name="firstName" placeholder={tConcept("name")} required />
+      <Input name="lastName" placeholder={tConcept("surname")} required />
+      <Input name="email" placeholder={tConcept("email")} required />
       <Input
-        name="lastName"
-        placeholder={tConcept({ id: "surname" })}
-        required
-      />
-      <Input name="phone" placeholder={tConcept({ id: "phone" })} required />
-      <Text bold>{tConcept({ id: "companyReferenceId-explanation-1" })}</Text>
-      <Text bold>{tConcept({ id: "companyReferenceId-explanation-2" })}</Text>
-      <Input
-        name="companyReferenceId"
-        placeholder={tConcept({ id: "companyReferenceId" })}
+        name="phone"
+        placeholder={tConcept("phone")}
         addon={
           <Ionicon
             name="information-circle"
@@ -59,10 +53,10 @@ export default function RegisterForm({
         <Checkbox
           name="termsAccepted"
           bg={"white"}
-          accessibilityLabel={tConcept({ id: "termsAccepted" })}
+          accessibilityLabel={tConcept("termsAccepted")}
         >
           <Text typography="small" bold color="warmGray.50">
-            {tConcept({ id: "termsAccepted" })}
+            {tConcept("termsAccepted")}
           </Text>
         </Checkbox>
       </Box>

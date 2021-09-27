@@ -13,6 +13,8 @@
        Auth: {
          screens: {
            Login: "login",
+           Register: "register",
+           OTP: "otp",
          },
        },
        Intro: {

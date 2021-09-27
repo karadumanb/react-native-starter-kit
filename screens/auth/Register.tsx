@@ -8,7 +8,7 @@ import { Alert } from "react-native";
 
 export default function Register({ route }: { route: RouteProps }) {
   const { navigate } = useNavigation<any>();
-  const { tScreen } = useTranslation(route);
+  const { tScreen, Trans } = useTranslation(route);
 
   const onSuccess = (data: IUser) => {
     Alert.alert("Registration accomplished", "Flow is missing for now.");
@@ -19,30 +19,27 @@ export default function Register({ route }: { route: RouteProps }) {
     <>
       <Card bg="white">
         <Box>
-          <Text typography="h4">{tScreen({ id: "title" })}</Text>
+          <Text typography="h4">{tScreen("title")}</Text>
         </Box>
         <RegisterForm onSuccess={onSuccess} />
       </Card>
       <Box paddingX={2}>
         <Box paddingTop={4}>
           <Text typography="p" align="center">
-            {tScreen(
-              {
-                id: "already-have-account",
-              },
-              {
-                login: (val: string) => (
+            <Trans
+              keyGenerator="screens"
+              i18nKey="already-have-account"
+              components={{
+                login: (
                   <Text
                     bold
                     typography="p"
                     accessibilityRole="link"
                     onPress={() => navigate(Routes.Auth.Login)}
-                  >
-                    {val}
-                  </Text>
+                  />
                 ),
-              }
-            )}
+              }}
+            />
           </Text>
         </Box>
         <Box alignItems="center" paddingBottom={1}>
@@ -50,9 +47,7 @@ export default function Register({ route }: { route: RouteProps }) {
         </Box>
         <Box>
           <Text align="center" onPress={() => navigate(Routes.Intro.Base)}>
-            {tScreen({
-              id: "checkout-app",
-            })}
+            {tScreen("checkout-app")}
           </Text>
         </Box>
       </Box>

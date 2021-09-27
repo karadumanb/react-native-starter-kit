@@ -9,31 +9,32 @@ import { Text } from "./Text";
 const phoneNumber = "1234567890";
 
 const ReachUs = () => {
-  const { tComponent } = useTranslation({ name: "General" });
+  const { Trans } = useTranslation({ name: "General" });
 
   return (
     <Text>
-      {tComponent(
-        {
-          id: "reach-us",
-        },
-        {
-          button: (val: string) => (
+      <Trans
+        i18nKey="reach-us"
+        components={{
+          highlight: (
             <Text
               bold
               typography="p"
               accessibilityRole="link"
               onPress={() => dialCall(phoneNumber)}
               color="success.50"
-            >
-              <Box paddingX={1} marginTop={-1}>
-                <Ionicon size={18} name="call" color={Colors.success[50]} />
-              </Box>
-              {val}
-            </Text>
+            />
           ),
-        }
-      )}
+        }}
+      />
+      <Box paddingX={1} marginTop={-1}>
+        <Ionicon
+          size={18}
+          name="call"
+          color={Colors.success[50]}
+          onPress={() => dialCall(phoneNumber)}
+        />
+      </Box>
     </Text>
   );
 };

@@ -1,6 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
+import { initializeLocalization } from "lib/i18n";
 import * as React from "react";
 
 export default function useCachedResources() {
@@ -27,6 +28,7 @@ export default function useCachedResources() {
     }
 
     loadResourcesAndDataAsync();
+    initializeLocalization();
   }, []);
 
   return isLoadingComplete;

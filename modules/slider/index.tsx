@@ -17,7 +17,6 @@ interface Props {
   data: SlideItem[];
 }
 
-
 export default function Slider({ data }: Props) {
   const { goBack } = useNavigation<any>();
   const { tModule } = useTranslation({ name: "Slider" });
@@ -42,9 +41,7 @@ export default function Slider({ data }: Props) {
     return (
       <Button
         variant="solid"
-        title={
-          lastItem ? tModule({ id: "start_app" }) : tModule({ id: "continue" })
-        }
+        title={lastItem ? tModule("start_app") : tModule("continue")}
         onPress={lastItem ? onDone : goToNext}
       />
     );

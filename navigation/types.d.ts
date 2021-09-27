@@ -18,3 +18,7 @@ declare type AuthParamList = {
   Register: undefined;
   OTP: undefined;
 };
+
+declare type IntroParamList = {
+  Intro: undefined;
+}

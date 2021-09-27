@@ -57,7 +57,7 @@ export const Search: React.FC<Props> = ({
           }}
           value={query}
           onChange={handleChange}
-          placeholder={placeholder || tComponent({ id: "default-placeholder" })}
+          placeholder={placeholder || tComponent("default-placeholder")}
           {...others}
         />
       </Box>

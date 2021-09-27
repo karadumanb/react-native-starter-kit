@@ -19,8 +19,8 @@ export default function OTP({ route }: { route: RouteProps }) {
   const onCountDownFinish = () => {
     goBack();
     toast.show({
-      title: tScreen({ id: "count_down_end_title" }),
-      description: tScreen({ id: "count_down_end_title" }),
+      title: tScreen("count_down_end_title"),
+      description: tScreen("count_down_end_title"),
       placement: "bottom",
       status: "info",
     });
@@ -29,10 +29,10 @@ export default function OTP({ route }: { route: RouteProps }) {
   return (
     <Card bg="white">
       <Flex mb="1" direction={"row"} justifyContent="space-between">
-        <Text typography="h4">{tScreen({ id: "title" })}</Text>
+        <Text typography="h4">{tScreen("title")}</Text>
         <CountDown typography="h4" onFinish={onCountDownFinish} />
       </Flex>
-      <Text typography="p">{tScreen({ id: "description" })}</Text>
+      <Text typography="p">{tScreen("description")}</Text>
       <OTPForm onSuccess={onSuccess} member={route.params?.data} />
     </Card>
   );

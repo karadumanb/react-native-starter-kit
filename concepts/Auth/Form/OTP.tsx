@@ -33,7 +33,7 @@ export default function OTPForm({
     <Form
       onSubmit={onSubmit}
       buttonProps={{
-        title: tConcept({ id: "button" }),
+        title: tConcept("button"),
         loading,
       }}
       recordType="login"

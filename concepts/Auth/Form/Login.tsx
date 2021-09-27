@@ -29,15 +29,15 @@ export default function LoginForm({
     <Form
       onSubmit={onSubmit}
       buttonProps={{
-        title: tConcept({ id: "button" }),
+        title: tConcept("button"),
         loading,
       }}
       recordType="login"
     >
       <Input
-        InputLeftElement={<Text>{tConcept({ id: "phone-suffix" })}</Text>}
+        InputLeftElement={<Text>{tConcept("phone-suffix")}</Text>}
         name="phone"
-        placeholder={tConcept({ id: "phone" })}
+        placeholder={tConcept("phone")}
         keyboardType="phone-pad"
         required
       />
