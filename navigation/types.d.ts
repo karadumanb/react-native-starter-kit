@@ -22,3 +22,7 @@ declare type AuthParamList = {
 declare type IntroParamList = {
   Intro: undefined;
 }
+
+declare type RootParamList = {
+  Page1Name: undefined;
+}

@@ -19,6 +19,7 @@ export default function useCachedResources() {
           "avenir-light": require("../../assets/fonts/avenirltstd-light.otf"),
           "avenir-bold": require("../../assets/fonts/Avenir-Black.ttf"),
         });
+        initializeLocalization();
       } catch (e) {
         // We might want to provide this error information to an error reporting service
         console.warn(e);
@@ -28,7 +29,6 @@ export default function useCachedResources() {
     }
 
     loadResourcesAndDataAsync();
-    initializeLocalization();
   }, []);
 
   return isLoadingComplete;
