@@ -18,7 +18,7 @@ export default function AuthNavigator() {
     if (isLoggedIn === true) {
       navigate(Routes.Root.Base, { replace: true });
     }
-  }, []);
+  }, [isLoggedIn]);
 
   return (
     <Box
