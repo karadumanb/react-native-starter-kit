@@ -52,7 +52,7 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Page1Name"
+        name="Page2Name"
         component={Page1Navigator}
         options={{
           tabBarIcon: () => (
@@ -63,7 +63,7 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Page1Name"
+        name="Page3Name"
         component={Page1Navigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="card" color={color} />,

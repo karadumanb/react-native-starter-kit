@@ -25,4 +25,6 @@ declare type IntroParamList = {
 
 declare type RootParamList = {
   Page1Name: undefined;
+  Page2Name: undefined;
+  Page3Name: undefined;
 }
